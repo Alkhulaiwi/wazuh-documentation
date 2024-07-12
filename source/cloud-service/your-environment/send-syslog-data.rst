@@ -45,7 +45,7 @@ Use rsyslog on a Linux endpoint with a Wazuh agent to log to a file and send tho
 
       # Storing Messages from a Remote System into a specific File
       if $fromhost-ip startswith 'REMOTE_DEVICE_IP' then /var/log/<FILE_NAME.log>
-      & ~
+      & stop
 
    To perform the following steps, make sure to replace <FILE_NAME.log> with the name chosen for this log.
 
